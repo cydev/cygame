@@ -79,14 +79,33 @@ body {
 }
 
 .copy {
+    display: flex;
     text-align: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .copy__logo {
+    margin-top: -2px;
+    margin-right: 7px;
     width: 12px;
     height: 12px;
 }
 
+.copy__content {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.copy__name {
+    text-transform: uppercase;
+}
+
+@media (min-width: 400px) {
+    .list {
+        width: 60%;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
@@ -144,6 +163,7 @@ body {
 
     .copy__content {
         font-size: 24px;
+        line-height: 24px;
     }
 }
 
