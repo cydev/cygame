@@ -2,18 +2,23 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     background-color: #1D1D24;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
-    padding: 30px 20px;
-    width: auto;
+    padding: 10% 20px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .logo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 100px;
     width: 85px;
     height: 85px;
 }
@@ -25,7 +30,6 @@ body {
 
 .list {
     margin: 0 auto;
-    margin-bottom: 100px;
     padding: 0;
     width: 160px;
     list-style: none;
@@ -86,18 +90,15 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        padding: 100px 50px;
-        padding-top: 100px;
+        padding: 7% 50px;
     }
 
     .logo {
-        margin-bottom: 200px;
         width: 185px;
         height: 185px;
     }
 
     .list {
-        margin-bottom: 400px;
         width: 420px;
     }
 
@@ -148,8 +149,7 @@ body {
 
 @media (min-width: 1200px) {
     .container {
-        padding-right: 120px;
-        padding-left: 120px;
+        padding: 2% 120px;
     }
 
     .logo__img:hover .logo__el-mid {
